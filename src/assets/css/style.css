@@ -1,0 +1,453 @@
+.dashMain {
+  background: #508070;
+  padding: 30px;
+}
+
+/* Auth pages */
+.loginPage {
+  height: 100%;
+}
+.headerAuth {
+  height: 60px;
+  align-items: center;
+  padding: 0 15px;
+}
+.optAuth {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.optAuth .btn {
+  padding: 0 15px;
+  height: 36px;
+  background: #508070;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 12px;
+}
+.authBody {
+  height: calc(100% - 60px);
+  display: flex;
+}
+.formLogin,
+.formAuth {
+  margin: auto;
+  width: 420px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.formLogin label,
+.formAuth label {
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+  color: #626262;
+}
+.formLogin .formFooter .btn,
+.formAuth .formFooter .btn {
+  width: 100%;
+  margin-top: 15px;
+  height: 36px;
+  border-radius: 5px;
+  background: #6db76d;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+.authError {
+  background: rgb(255 0 10 / 30%);
+  border: 1px solid #db6060;
+  color: #fff;
+  margin-bottom: 8px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  min-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formLogin .formGroup + .formGroup,
+.formAuth .formGroup + .formGroup {
+  margin-top: 12px;
+}
+/* Auth pages */
+
+/* Sidemenu */
+.sideMenu {
+  background: #212423;
+  flex: 0 0 280px;
+  max-width: 280px;
+  padding: 30px;
+  flex-direction: column;
+}
+.logoNav {
+  margin-bottom: 30px;
+}
+.logoNav a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.navOption + .navOption {
+  margin-top: 1px;
+}
+.navOption a,
+.logoutBtn {
+  display: flex;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 8px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.navOption:hover a,
+.navOption .active {
+  background-color: rgb(52 162 129 / 20%);
+  color: #46dbae;
+}
+.infoSideBarUser figure {
+  width: 100%;
+  flex: 0 0 40px;
+  max-width: 40px;
+  height: 40px;
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #fff;
+  overflow: hidden;
+  padding: 8px;
+}
+.infoSideBarUser figure svg {
+  height: auto;
+}
+.userInfoSideBar {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.userInfoSideBar h4,
+.userInfoSideBar a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+.userInfoSideBar h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.userInfoSideBar a {
+  font-size: 13px;
+  line-height: 16px;
+}
+/* Sidemenu */
+
+/* Main Container */
+.dashContainer {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background: #151515;
+}
+.mainDashContent {
+  padding: 25px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "transactTop transactTop transactTop statsTransactions statsTransactions"
+    "transactTop transactTop transactTop statsTransactions statsTransactions"
+    "userBalances userBalances userBalances activityTransactions activityTransactions"
+    "userBalances userBalances userBalances activityTransactions activityTransactions"
+    "userBalances userBalances userBalances activityTransactions activityTransactions";
+}
+
+.transactTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 15px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "expenseArea expenseArea expenseArea settleArea settleArea settleArea"
+    "expenseArea expenseArea expenseArea settleArea settleArea settleArea"
+    "infoTransacArea infoTransacArea infoTransacArea infoTransacArea infoTransacArea infoTransacArea"
+    "infoTransacArea infoTransacArea infoTransacArea infoTransacArea infoTransacArea infoTransacArea";
+  grid-area: transactTop;
+}
+
+.expenseArea {
+  grid-area: expenseArea;
+}
+
+.settleArea {
+  grid-area: settleArea;
+}
+
+.infoTransacArea {
+  grid-area: infoTransacArea;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px;
+}
+
+.withTransactions {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 15px;
+}
+
+.statsTransactions {
+  grid-area: statsTransactions;
+}
+
+.activityTransactions {
+  grid-area: activityTransactions;
+}
+
+.userBalances {
+  grid-area: userBalances;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "colOwe colOwed";
+}
+.colOwe {
+  grid-area: colOwe;
+}
+.colOwed {
+  grid-area: colOwed;
+}
+
+.btnSettleExpense {
+  background: linear-gradient(to bottom, #c77145, #7b3026);
+}
+.btnAddExpense,
+.btnSettleExpense {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-indent: -0.5px;
+}
+.btnAddExpense {
+  background: linear-gradient(to bottom, #299378, #1a5345);
+}
+.dashCells {
+  background: #202523;
+  border-radius: 5px;
+}
+.infoTransacArea article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.infoTransacArea article h6 {
+  color: #6daf97;
+  font-size: 14px;
+  font-weight: 300;
+}
+.infoTransacArea article h4 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 10px;
+  color: #69c179;
+}
+.infoTransacArea .infoOweAmt h4 {
+  color: #ab4747;
+}
+.activityTransactions,
+.userBalances {
+  overflow: hidden;
+}
+.headerBalances {
+  padding: 5px 12px;
+  height: 60px;
+  background: #242928;
+}
+.headerBalances h5 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-indent: -0.5px;
+}
+.sortCol select {
+  padding: 0 4px;
+  padding-right: 16px;
+  height: 30px;
+  font-size: 13px;
+  color: #6daf97;
+  border-radius: 5px;
+  border-color: #6daf97;
+}
+.colBalances + .colBalances .colBody {
+  border-left: 1px solid #29302f;
+}
+.colBody {
+  padding: 8px 12px;
+  overflow: auto;
+}
+.transactionEl figure {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 60px;
+  height: 60px;
+  background: #b9b9b9;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.transactionEl + .transactionEl {
+  margin-top: 12px;
+}
+.transactionInfo {
+  align-self: center;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.transactionInfo h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-indent: -1px;
+}
+.transactionInfo p {
+  color: grey;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 3px;
+}
+.transactionInfo p span {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-left: 5px;
+}
+.lendAmt {
+  color: #289176;
+}
+.borrowAmt {
+  color: #c35e5e;
+}
+/* Main Container */
+
+/* Modal */
+.modalOuter,
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+}
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.modalInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 620px;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 9;
+}
+.modalHeader {
+  height: 60px;
+  padding: 0 15px;
+  background: #49b19c;
+  border-radius: 6px 6px 0 0;
+}
+.closeModalBtn {
+  width: 30px;
+  height: 30px;
+  background: none;
+  padding: 7px;
+}
+.modalHeader h3 {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-indent: -1px;
+}
+.modalBody {
+  height: auto;
+  max-height: 50vh;
+  padding: 15px 12px;
+  overflow: auto;
+}
+.formTransaction .formGroup > label {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 36px;
+  flex: 0 0 150px;
+  color: #333;
+}
+.formRow select,
+.formRow textarea,
+.formRow input {
+  min-height: 36px;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  font-size: 14px;
+}
+.formRow textarea {
+  height: 120px;
+}
+.formTransaction .formGroup + .formGroup {
+  margin-top: 15px;
+}
+.formRow select {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  padding: 8px 22px 8px 12px;
+}
+.btnConfirmTransaction {
+  height: 42px;
+  padding: 0 30px;
+  border-radius: 5px;
+  width: 100%;
+  background: #e9513b;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-indent: -1px;
+}
+.errorMsg {
+  font-size: 12px;
+  line-height: 1;
+  margin-top: 3px;
+  color: #e55656;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+/* Modal */

@@ -1,0 +1,16 @@
+[
+    {
+        "user" : "Rohan Das",
+        "email": "amarnathds@gmail.com",
+        "password": "123456",
+        "transactions": [],
+        "balance" : 100
+    },
+    {
+        "user" : "Serious Sam",
+        "email": "serioussam@gmail.com",
+        "password": "123456",
+        "transactions": [],
+        "balance" : 100
+    }
+]

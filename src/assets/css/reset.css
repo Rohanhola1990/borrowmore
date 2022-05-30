@@ -1,0 +1,269 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000;
+  font-weight: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+/* Lists==================== */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Links, inputs and Buttons==================== */
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+a,
+.btn,
+.button,
+button,
+input[type="button"],
+input[type="button"],
+input[type="submit"],
+input[type="submit"],
+select {
+  outline: none;
+  -webkit-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input,
+textarea,
+select {
+  font-size: 16px;
+  padding: 3px 10px;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn,
+.btn-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn { border-radius:5px ; -webkit-border-radius:5px ; -moz-border-radius:5px ; -ms-border-radius:5px ; -o-border-radius:5px ; }
+
+input::-ms-clear,
+input:-ms-clear {
+  display: none;
+}
+
+textarea {
+  resize: none;
+  padding: 5px 10px;
+}
+
+:disabled,
+::disabled {
+  cursor: not-allowed;
+}
+:readonly,
+::readonly {
+  cursor: default;
+}
+
+::-webkit-input-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+::-moz-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+:-ms-input-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+::-ms-input-placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+::placeholder {
+  font-size: inherit;
+  color: #bbb9d1;
+}
+
+/* Tables==================== */
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td {
+  vertical-align: middle;
+}
+
+/* Headings==================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Other elements==================== */
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 15px;
+}
+
+br,
+.clear {
+  clear: both;
+}
+
+audio,
+video {
+  display: block;
+  width: 100%;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.text-center {
+  text-align: center;
+  justify-content: center;
+}
+.text-right {
+  text-align: end;
+  justify-content: flex-end;
+}
+.text-left {
+  text-align: start;
+  justify-content: flex-start;
+}
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.f-column {
+  flex-direction: column;
+}
+.f-align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.f-justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.f-justify-between {
+  justify-content: space-between;
+}
+.f-1 {
+    flex: 1 1 auto;
+}
+.h-100 {
+    height: 100%;
+}
+.w-100 {
+    flex: 1 1 100%;
+    width: 100%;
+}
+.vh-100 {
+    height: 100vh;
+}
+.no-scroll {
+    overflow: hidden;
+}
+
+.ml-a {margin-left: auto;}
+.mr-a {margin-right: auto;}
+.mt-a {margin-top: auto;}
+.mb-a {margin-bottom: auto;}
